@@ -30,10 +30,10 @@
   <div class="banner-text">
   <h1>ようこそ、ユニスモバイルへ</h1>
 
-  <h3>=========================================</h3>
-  <h3>|「ユニスとつながる、未来がはじまる。」 |</h3>
-  <h3>|「Connect Everything. Connect Unis. 」 |</h3>
-  <h3>==========================================</h3>
+  <h2>=========================================</h2>
+  <h2>|   「ユニスとつながる、未来がはじまる。」   |</h2>
+  <h2>|    「    Connect Everything. Connect Unis.    」   |</h2>
+  <h2>==========================================</h2>
 
   <a href="#contact" class="btn">お問い合わせ</a>
 </div>
@@ -50,8 +50,8 @@
     color: red;
   }
 
-  /* h3：红 → 粉 → 绿 → 蓝 渐变文字 */
-  .banner-text h3 {
+  /* h2：红 → 粉 → 绿 → 蓝 渐变文字 */
+  .banner-text h2 {
     font-weight: bold;
     background: linear-gradient(
       90deg,
@@ -165,14 +165,10 @@
 <section id="contact" class="section bg-light">
   <div class="container">
     <h2>お問い合わせ</h2>
-    <!-- 修改form标签，添加method和action -->
-    <form 
-      action="https://formspree.io/f/mdaneqop" 
-      method="POST"
-    >
-      <input type="text" name="name" placeholder="お名前" required>
-      <input type="email" name="email" placeholder="メールアドレス" required>
-      <textarea name="message" placeholder="ご意見・ご感想" required></textarea>
+    <form>
+      <input type="text" placeholder="お名前" required>
+      <input type="email" placeholder="メールアドレス" required>
+      <textarea placeholder="ご意見・ご感想" required></textarea>
       <button type="submit">メッセージ</button>
     </form>
   </div>
@@ -188,5 +184,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
-
