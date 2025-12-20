@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ようこそ、ユニスモバイルへ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 顶部导航 -->
+<header>
+  <div class="container">
+    <h1 class="logo">ユニスモバイル</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">会社について</a></li>
+        <li><a href="#services">Servers</a></li>
+        <li><a href="#portfolio">製品</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+      <div class="menu-toggle">☰</div>
+    </nav>
+  </div>
+</header>
+
+<!-- 横幅 -->
+<section class="banner">
+  <img src="images/banner.jpg" alt="横幅图片">
+  <div class="banner-text">
+  <h1>ようこそ、ユニスモバイルへ</h1>
+
+  <h2>=========================================</h2>
+  <h2>|   「ユニスとつながる、未来がはじまる。」   |</h2>
+  <h2>|    「    Connect Everything. Connect Unis.    」   |</h2>
+  <h2>==========================================</h2>
+
+  <a href="#contact" class="btn">お問い合わせ</a>
+</div>
+
+.banner-text h1 {
+  font-weight: bold;
+  color: red;
+  font-size: 3rem; /* 调大标题 */
+}
+<style>
+  /* h1：红色加粗 */
+  .banner-text h1 {
+    font-weight: bold;
+    color: red;
+  }
+
+  /* h2：红 → 粉 → 绿 → 蓝 渐变文字 */
+  .banner-text h2 {
+    font-weight: bold;
+    background: linear-gradient(
+      90deg,
+      #ff0000, /* 红 */
+      #ff69b4, /* 粉 */
+      #00c853, /* 绿 */
+      #1e90ff, /* 蓝 */
+      #ff0000  /* 回到红，循环更自然 */
+    );
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 4s linear infinite;
+  }
+
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+</style>
+
+</section>
+
+<!-- 关于我们 -->
+<section id="about" class="section">
+  <div class="container">
+    <h1>株式会社ユニスモバイル（UNIS MOBILE）は、 </h1>
+    <p>「つながりの未来を、ひとつに。」を掲げる新世代モバイル通信企業です。  </p>
+    <p>  </p>
+    <p>私たちは、より自由で、よりスマートな通信体験をすべての人へ届けるため、  </p>
+    <p>シンプルで信頼性の高いモバイルサービスを提供しています。  </p>
+    <p>  </p>
+    <p>ユニスモバイルが目指すのは、  </p>
+    <p>デバイス・サービス・ネットワークがシームレスにつながる世界。  </p>
+    <p>通信の壁を取り払い、誰もが安心して利用できる  </p>
+    <p>“ユニバーサル・コネクション（Universal Connection）” の実現です。  </p>
+    <p>  </p>
+    <p>先端技術と柔軟なプラットフォームを活かし、  </p>
+    <p>5G／IoT／クラウドコミュニケーションなど  </p>
+    <p>次世代サービスの開発にも積極的に取り組んでいます。  </p>
+    <p>  </p>
+    <p>ユニスモバイルは、通信の未来をより簡単に、より身近にしていきます。  </p>
+    <p>    </p>
+  </div>
+</section>
+
+<!-- 服务 -->
+<section id="services" class="section bg-light">
+  <div class="container">
+    <h1>料金プラン</h1>
+     <h2>ニーズに合わせて</h2>
+     <h2>選べるプラン</h2>
+    <div class="services-grid">
+      <div class="service-item">
+        <img src="images/980.jpg" alt="プラン1">
+        <h2>プラン1</h2>
+        <p>Rakuten SMS＋データ3GB</p>
+        <p>キャリア名:楽天モバイル	料金:\980	データ:4GB	音声:0	支払い方法：月額</p>
+      </div>
+      <div class="service-item">
+        <img src="images/1480.jpg" alt="プラン2">
+        <h3>Rakuten SMS＋データ7GB</h3>
+        <p>キャリア名:楽天モバイル	料金:\1480	データ:8.5GB	音声:0	支払い方法：月額</p>
+      </div>
+      <div class="service-item">
+        <img src="images/1980.jpg" alt="プラン3">
+        <h3>Rakuten 音声＋データ 3GB</h3>
+        <p>キャリア名:楽天モバイル	料金:\1980	データ:4GB	音声:無制限	支払い方法：月額</p>
+      </div>
+      <div class="service-item">
+        <img src="images/2380.jpg" alt="プラン4">
+        <h3>Rakuten SMS＋データ30GB</h3>
+        <p>キャリア名:楽天モバイル	料金:\2380	データ:32GB	音声:0	支払い方法：月額</p>
+      </div>
+      <div class="service-item">
+        <img src="images/2380-1.jpg" alt="プラン5">
+        <h3>Rakuten 音声＋データ 5GB</h3>
+        <p>キャリア名:楽天モバイル	料金:\2380	データ:6GB	音声:無制限	支払い方法：月額</p>
+      </div>
+            <div class="service-item">
+        <img src="images/2780.jpg" alt="プラン6">
+        <h3>Rakuten 音声＋データ 30GB</h3>
+        <p>キャリア名:楽天モバイル	料金:\2780	データ:32GB	音声:無制限	支払い方法：月額</p>
+      </div>
+      <div class="service-item">
+        <img src="images/2980.jpg" alt="プラン7">
+        <h3>Rakuten 音声+データ無制限プラン</h3>
+        <p>キャリア名:楽天モバイル	料金:\2980	データ:無制限GB	音声:無制限	支払い方法：月額</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 作品展示 -->
+<section id="portfolio" class="section">
+  <div class="container">
+    <h2>事例一覧</h2>
+    <div class="portfolio-grid">
+      <img src="images/rei1.jpg" alt="事例1">
+      <img src="images/rei2.jpg" alt="事例2">
+      <img src="images/rei3.jpg" alt="事例3">
+    </div>
+  </div>
+</section>
+
+<!-- 联系我们 -->
+<section id="contact" class="section bg-light">
+  <div class="container">
+    <h2>お問い合わせ</h2>
+    <form>
+      <input type="text" placeholder="お名前" required>
+      <input type="email" placeholder="メールアドレス" required>
+      <textarea placeholder="ご意見・ご感想" required></textarea>
+      <button type="submit">メッセージ</button>
+    </form>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer>
+  <div class="container">
+    <p>·ユニスモバイル株式会社 | 全著作権所有 © 2025</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

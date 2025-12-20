@@ -1,0 +1,50 @@
+/* í óp */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Arial, sans-serif; line-height:1.6; }
+.container { width:90%; max-width:1200px; margin:auto; }
+
+/* ?çq */
+header { background:#1e90ff; color:white; }
+header .container { display:flex; justify-content:space-between; align-items:center; padding:20px 0; }
+header .logo { font-size:24px; font-weight:bold; }
+nav ul { display:flex; list-style:none; }
+nav ul li { margin-left:20px; }
+nav ul li a { color:white; text-decoration:none; }
+.menu-toggle { display:none; cursor:pointer; font-size:24px; }
+
+/* â°ïù */
+.banner { position:relative; text-align:center; color:white; }
+.banner img { width:100%; height:auto; display:block; }
+.banner-text { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); }
+.banner .btn { display:inline-block; padding:12px 24px; background:#ff4500; color:white; text-decoration:none; margin-top:10px; }
+
+/* î≈? */
+.section { padding:60px 0; text-align:center; }
+.bg-light { background:#f5f5f5; }
+
+/* ïû? */
+.services-grid { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:30px; }
+.service-item { flex:1 1 250px; background:white; padding:20px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+.service-item img { width:100%; border-radius:8px; }
+.service-item h3 { margin-top:15px; }
+
+/* çÏïi */
+.portfolio-grid { display:flex; flex-wrap:wrap; gap:15px; justify-content:center; margin-top:30px; }
+.portfolio-grid img { width:300px; border-radius:8px; }
+
+/* ?ånï\? */
+form { display:flex; flex-direction:column; gap:15px; max-width:500px; margin:auto; }
+form input, form textarea { padding:10px; border:1px solid #ccc; border-radius:5px; width:100%; }
+form button { padding:12px; background:#1e90ff; color:white; border:none; cursor:pointer; }
+form button:hover { background:#0f6ec2; }
+
+/* ?ãr */
+footer { background:#333; color:white; text-align:center; padding:20px; margin-top:30px; }
+
+/* ??éÆ */
+@media(max-width:768px){
+  nav ul { display:none; flex-direction:column; background:#1e90ff; position:absolute; top:60px; right:0; width:200px; }
+  nav ul.show { display:flex; }
+  .menu-toggle { display:block; }
+  .services-grid, .portfolio-grid { flex-direction:column; align-items:center; }
+}
