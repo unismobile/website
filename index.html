@@ -165,30 +165,15 @@
 <section id="contact" class="section bg-light">
   <div class="container">
     <h2>お問い合わせ</h2>
+    <!-- 修改form标签，添加method和action -->
     <form 
       action="https://formspree.io/f/mdaneqop" 
       method="POST"
     >
-      <!-- 姓名输入框 -->
       <input type="text" name="name" placeholder="お名前" required>
-      
-      <!-- 邮箱输入框 -->
       <input type="email" name="email" placeholder="メールアドレス" required>
-      
-      <!-- 留言框 -->
       <textarea name="message" placeholder="ご意見・ご感想" required></textarea>
-      
-      <!-- 隐藏字段：设置你收到的邮件主题（可选但推荐） -->
-      <input type="hidden" name="_subject" value="New website contact form submission！">
-      
-      <!-- 防止垃圾邮件的蜜罐字段（可选，Formspree会自动处理） -->
-      <!-- <input type="text" name="_gotcha" style="display:none;"> -->
-      
-      <!-- 提交按钮 -->
       <button type="submit">メッセージ</button>
-      
-      <!-- 成功/失败提示页（可选） -->
-      <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
     </form>
   </div>
 </section>
@@ -203,4 +188,5 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
