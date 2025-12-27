@@ -6,10 +6,11 @@ menuToggle.addEventListener('click', () => {
   navLinks.classList.toggle('show');
 });
 
-// ??表?提交提示
+// 提示メッセージ
 const form = document.querySelector('form');
 form.addEventListener('submit', e => {
   e.preventDefault();
-  alert('感??的留言！');
+  alert('Thank you very much indeed.');
   form.reset();
 });
+
